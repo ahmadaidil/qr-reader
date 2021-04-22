@@ -4,7 +4,8 @@
   "description": "node qr reader",
   "main": "dist/qr-reader.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepare": "npm run build",
+    "build": "rm -rf dist; tsc -p ."
   },
   "repository": {
     "type": "git",
