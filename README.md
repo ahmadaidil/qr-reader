@@ -8,11 +8,11 @@ Enable a carriage return/line feed (enter key) suffix in QR device or this libra
 
 To install via npm:
 ```bash
-npm install --save qr-reader
+npm install --save @ahmadaidil/qr-reader
 ```
 To install via yarn:
 ```bash
-yarn add qr-reader
+yarn add @ahmadaidil/qr-reader
 ```
 
 ## Usage
