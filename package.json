@@ -1,6 +1,6 @@
 {
   "name": "@ahmadaidil/qr-reader",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "node qr reader",
   "main": "dist/qr-reader.js",
   "types": "dist/qr-reader.d.ts",
