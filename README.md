@@ -27,7 +27,8 @@ input the qr device product id, vendor id and serial number at the param object
 | serialNumber | string | device serial number |
 
 ```js
-const QRReader = require('qr-reader')
+const QRReader = require('@ahmadaidil/qr-reader')
+
 const device = new QRReader({
   productId: 4608,
   vendorId: 1504,
@@ -39,22 +40,22 @@ device.on('open', msg => console.log(msg)) // QR device with PID 4608, VID 1504 
 
 ### Reading from a device
 
-To receive the QR string, use `device.on("data",...)`.
+To receive the QR string, use `device.on('data',...)`.
 A `qr-reader` device is an EventEmitter.
 Reading from a device is performed by registering a "data" event handler:
 
 ```js
-device.on("data", qrString => {});
+device.on('data', qrString => {});
 ```
 
 You can also listen for errors like this:
 
 ```js
-device.on("error", err => {});
+device.on('error', err => {});
 ```
 
 Notes:
-- Reads via `device.on("data")` are asynchronous
+- Reads via `device.on('data')` are asynchronous
 - To remove an event handler, close the device with `device.close()`
 - When there is not yet a data handler or no data handler exists, data is not read at all.
 
